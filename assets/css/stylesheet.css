@@ -1,0 +1,307 @@
+* #logo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    
+    z-index: 1000; /* Optional: ensure the header is above other content */
+    padding: 10px; /* Optional: add padding to ensure spacing around the logo */
+}
+
+
+header {
+    color: blue;
+    
+    }
+p {
+    color: blue;
+}
+
+main {
+
+    display: inline-flex;
+    width: 1440px;
+    height: 720px;
+    margin: 0;
+    padding: 0
+    }
+footer {
+    display: inline-block;
+   width:1440px;
+   height: 180px;
+    margin-top: 0;
+}
+
+.gametitle {
+    padding-top: 20%;
+    
+}
+
+.left{
+    flex-direction: row;
+    background-color: blacK;
+    float: left;
+    width: 360px;
+    height: 100%;
+    margin:0;
+    
+}
+.right {
+    flex-direction: row;
+    background-color: black;
+    height: 100%;
+    width: 360px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.middle {
+    flex-direction: row;
+    background-color: black;
+    width: 720px;
+    height: 720px;
+    margin:0%;
+    padding: 0 0 0 0;
+    display: block;
+    justify-content: center;
+    
+    
+    
+       
+}
+
+.left-bottom {
+    background-color: black;
+    margin-bottom: px;
+    padding: 0;
+  float:left;
+width: 360px;
+height: 180px;
+border-radius:0 0 0 50px;
+display: inline-flex;
+    justify-content: center;
+    border: solid blueviolet 3px;
+}
+
+.right-bottom {
+    background-color: black; 
+float: right;
+    margin: 0;
+    width: 360px;
+    height: 180px;
+    border-radius:0 0 50px 0; 
+    display: inline-flex;
+    justify-content: center;
+    border: solid blueviolet 3px;
+    
+}
+
+ 
+.button {
+    
+background-color: black;
+  text-align: top;
+  text-decoration: none;
+  color: blueviolet;
+  border: 2px solid black;
+  font-size: auto;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  height: 45%;
+  width:45%;
+  &:before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: blueviolet;
+    color: #000000;
+    border-bottom: 4px solid darken(black, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.button2 {
+   background-color: black;
+      text-align: center;
+      text-decoration: none;
+      color: blueviolet;
+      border: 2px solid black;
+      font-size: auto;
+      display: inline-block;
+      border-radius: 0.3em;
+      transition: all 0.2s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      height: 45%;
+      width:45%;
+      &:before {
+        content: "";
+        background-color: black;
+        height: 100%;
+        width: 3em;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -4.5em;
+        transform: skewX(-45deg) translateX(0);
+        transition: none;
+      }
+      &:hover {
+        background-color: blueviolet;
+        color: #000000;
+        border-bottom: 4px solid darken(black, 10%);
+        &:before {
+          transform: skewX(-45deg) translateX(13.5em);
+         transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+   
+    .button2 h1 {
+    top: 0;
+    left: 0;
+    }
+
+.button3 { background-color: black;
+text-align: top;
+text-decoration: none;
+color: blueviolet;
+border: 2px solid black;
+font-size: auto;
+display: inline-block;
+border-radius: 0.3em;
+transition: all 0.2s ease-in-out;
+position: relative;
+overflow: hidden;
+height: 45%;
+width:43%;
+&:before {
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+&:hover {
+  background-color: blueviolet;
+  color: #000000;
+  border-bottom: 4px solid darken(black, 10%);
+  &:before {
+    transform: skewX(-45deg) translateX(13.5em);
+   transition: all 0.5s ease-in-out;
+  }
+}
+} 
+
+
+.button4
+ { background-color: black;
+text-align: top;
+text-decoration: none;
+color: blueviolet;
+border: 2px solid black;
+font-size: auto;
+display: inline-block;
+border-radius: 0.3em;
+transition: all 0.2s ease-in-out;
+position: relative;
+overflow: hidden;
+height: 45%;
+width:54%;
+&:before {
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+&:hover {
+  background-color: blueviolet;
+  color: #000000;
+  border-bottom: 4px solid darken(black, 10%);
+  &:before {
+    transform: skewX(-45deg) translateX(13.5em);
+   transition: all 0.5s ease-in-out;
+  }
+}
+}
+
+
+
+
+.gametitle  {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+      9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: blueviolet;
+    background-color:(blueviolet);
+    background-clip: text;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+  }
+  
+  
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-12px, -12px);
+    }
+    50% {
+      transform: translate(-12px, -12px);
+    }
+    60% {
+      transform: translate(-12px, -12px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+
+
+#middlesetup {
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+
+
+#logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
