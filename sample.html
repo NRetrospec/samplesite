@@ -19,7 +19,7 @@
     <div id="container"></div>
 
     <!-- Include the Ruffle JS file -->
-    <script src="https://phreshhhhh.github.io/icytower/icy_tower.swf"></script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
     <script>
         window.RufflePlayer = window.RufflePlayer || {};
@@ -31,7 +31,9 @@
             container.appendChild(player);
 
             // Load the SWF file
-            player.ruffle().load("movie.swf");
+            player.load("https://phreshhhhh.github.io/icytower/icy_tower.swf").catch((error) => {
+                console.error("Failed to load SWF file:", error);
+            });
 
             // Touch input handling
             container.addEventListener("touchstart", (e) => {
