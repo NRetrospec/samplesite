@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruffle Flash Emulator with Touch Input</title>
+    <style>
+        /* Optional: Styling for the container */
+        #container {
+            width: 100%;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <!-- Include the Ruffle JS file -->
+    <script src="https://phreshhhhh.github.io/icytower/icy_tower.swf"></script>
+
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+
+        window.addEventListener("DOMContentLoaded", () => {
+            let ruffle = window.RufflePlayer.newest();
+            let player = ruffle.createPlayer();
+            let container = document.getElementById("container");
+            container.appendChild(player);
+
+            // Load the SWF file
+            player.ruffle().load("movie.swf");
+
+            // Touch input handling
+            container.addEventListener("touchstart", (e) => {
+                e.preventDefault();
+                // Convert touch coordinates to mouse coordinates
+                let touch = e.touches[0];
+                let mouseEvent = new MouseEvent("mousedown", {
+                    clientX: touch.clientX,
+                    clientY: touch.clientY,
+                    bubbles: true,
+                });
+                container.dispatchEvent(mouseEvent);
+            });
+
+            container.addEventListener("touchmove", (e) => {
+                e.preventDefault();
+                let touch = e.touches[0];
+                let mouseEvent = new MouseEvent("mousemove", {
+                    clientX: touch.clientX,
+                    clientY: touch.clientY,
+                    bubbles: true,
+                });
+                container.dispatchEvent(mouseEvent);
+            });
+
+            container.addEventListener("touchend", (e) => {
+                e.preventDefault();
+                let touch = e.changedTouches[0];
+                let mouseEvent = new MouseEvent("mouseup", {
+                    clientX: touch.clientX,
+                    clientY: touch.clientY,
+                    bubbles: true,
+                });
+                container.dispatchEvent(mouseEvent);
+            });
+        });
+    </script>
+
+</body>
+</html>
