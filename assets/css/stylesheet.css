@@ -311,6 +311,21 @@ width:54%;
 
  /* Mobile Devices (Up to 767px) */
 @media only screen and (max-width: 767px) {
+  /* Remove or adjust the logo */
+  #logo {
+    display: none; /* Remove the logo */
+    /* OR */
+    /* position: static; /* Change position to static */
+    /* width: 100%; /* Make it fit within the viewport */
+    /* max-width: 100%; /* Ensure it doesn't overflow */
+  }
+
+  /* Ensure no elements overflow the viewport */
+  body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  /* Adjust main layout elements */
   main {
     width: 100%;
     height: auto;
@@ -341,14 +356,7 @@ width:54%;
     margin: 10px auto;
   }
 
-  #logo {
-    max-width: 100px;
-  }
-
-  header, p {
-    font-size: 1.2rem;
-  }
-
+  /* Adjust the middle section */
   .middle {
     width: 100%; /* Full width */
     height: auto; /* Adjust height automatically */
@@ -373,76 +381,7 @@ width:54%;
     transform-origin: center; /* Ensure rotation is centered */
   }
 
-  footer {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Tablets (768px to 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  main {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-  }
-
-  .left, .middle, .right {
-    width: 100%;
-    height: auto;
-    float: none;
-  }
-
-  .left-bottom, .right-bottom {
-    width: 50%;
-    height: auto;
-    float: left;
-    border-radius: 0;
-  }
-
-  .gametitle {
-    padding-top: 15%;
-    font-size: calc(2rem + 4vw);
-  }
-
-  .button, .button2, .button3, .button4 {
-    width: 60%;
-    height: auto;
-    margin: 10px auto;
-  }
-
-  #logo {
-    max-width: 120px;
-  }
-
-  header, p {
-    font-size: 1.2rem;
-  }
-
-  .middle {
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height automatically */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
- display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Hide all elements except the #gameContainer */
-  .middle > *:not(#gameContainer) {
-    display: none;
-  }
-
-  /* Ensure the #gameContainer is displayed */
-  #gameContainer {
-    display: block;
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height automatically */
-    transform: rotate(90deg); /* Rotate the embed */
-    transform-origin: center; /* Ensure rotation is centered */
-  }
-
+  /* Adjust footer */
   footer {
     width: 100%;
     height: auto;
