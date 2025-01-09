@@ -15,7 +15,25 @@
     </style>
 </head>
 <body>
-
+    <input type="text" id="testInput" placeholder="Press the button">
+    <button id="spaceButton">Press Space</button>
+    
+    <script>
+    document.getElementById('spaceButton').addEventListener('click', function() {
+        var input = document.getElementById('testInput');
+        input.focus();
+    
+        var event = new KeyboardEvent('keydown', {
+            key: ' ',
+            code: 'Space',
+            keyCode: 32,
+            which: 32,
+            bubbles: true
+        });
+    
+        input.dispatchEvent(event);
+    });
+    </script>
     <div id="container"></div>
 
     <!-- Include the Ruffle JS file -->
