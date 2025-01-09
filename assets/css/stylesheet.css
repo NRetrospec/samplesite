@@ -308,7 +308,17 @@ width:54%;
     max-width: 150px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
   }
-
+  
+  #spaceButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10; /* Ensure the button is above the embed */
+}
  /* Mobile Devices (Up to 767px) */
 @media only screen and (max-width: 767px) {
   /* Remove or adjust the logo */
