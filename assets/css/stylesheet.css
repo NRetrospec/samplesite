@@ -1,16 +1,8 @@
 @import url(https://drive.google.com/file/d/1IXwMln-M2B0GpylgJP4Wt_WoKfbVjgjM/view?usp=sharing);
-
-
-* #logo {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+body {
+  height: 100%;
   width: 100%;
-  
-  z-index: 1000; /* Optional: ensure the header is above other content */
-  padding: 10px; /* Optional: add padding to ensure spacing around the logo */
 }
-
 
 header {
     color: blue;
@@ -293,7 +285,44 @@ width:54%;
     }
   }
 
+  body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set font for the entire body */
+}
 
+header {
+    background-color: black; /* Black background for the header */
+}
+
+.navbar {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: space-around; /* Evenly distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 15px 0; /* Vertical padding */
+}
+
+.navbar-list {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for the list */
+    flex-grow: 1; /* Allow the list to grow to fill space */
+}
+
+.navbar-item {
+    margin: 0 20px; /* Add horizontal margin between list items */
+}
+
+.navbar a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Increase font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #f0f0f0; /* Change color on hover */
+}
 
 #middlesetup {
     display: flex;
@@ -391,6 +420,8 @@ iframe {
 #allGamesList a:hover {
   color: #fff;
 }
+
+
 
  /* Mobile Devices (Up to 767px) */
 @media only screen and (max-width: 767px) {

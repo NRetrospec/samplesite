@@ -1,0 +1,21 @@
+nav {
+    background-color: black; /* Set background color to black */
+    text-align: center; /* Center the navigation links */
+    padding: 10px 0; /* Add some padding */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display links in a single line */
+    margin: 0 15px; /* Add space between links */
+}
+
+nav a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Arial', sans-serif; /* Change to a more elegant font */
+}
