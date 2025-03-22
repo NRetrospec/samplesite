@@ -1,9 +1,25 @@
 @import url(https://drive.google.com/file/d/1IXwMln-M2B0GpylgJP4Wt_WoKfbVjgjM/view?usp=sharing);
+<<<<<<< HEAD
 body {
   height: 100%;
   width: 100%;
 }
 
+=======
+
+
+* #logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  
+  z-index: 1000; /* Optional: ensure the header is above other content */
+  padding: 10px; /* Optional: add padding to ensure spacing around the logo */
+}
+
+
+>>>>>>> c6adcdc78ed4cd86980adfc02e10a4f9d0594cc2
 header {
     color: blue;
     
@@ -285,6 +301,7 @@ width:54%;
     }
   }
 
+<<<<<<< HEAD
   body {
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set font for the entire body */
@@ -323,6 +340,9 @@ header {
 .navbar a:hover {
     color: #f0f0f0; /* Change color on hover */
 }
+=======
+
+>>>>>>> c6adcdc78ed4cd86980adfc02e10a4f9d0594cc2
 
 #middlesetup {
     display: flex;
@@ -421,8 +441,11 @@ iframe {
   color: #fff;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c6adcdc78ed4cd86980adfc02e10a4f9d0594cc2
  /* Mobile Devices (Up to 767px) */
 @media only screen and (max-width: 767px) {
   /* Remove or adjust the logo */
